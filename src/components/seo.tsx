@@ -9,7 +9,14 @@ import * as React from "react"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function Seo({ description, lang, meta, title }) {
+interface IProp {
+  description: string
+  lang: string
+  meta: string
+  title: string
+}
+
+function Seo({ description, lang, meta, title }: IProp) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -33,7 +40,7 @@ function Seo({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : undefined}
       meta={[
         {
           name: `description`,
@@ -67,7 +74,7 @@ function Seo({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ].concat(meta)}
+      ].concat(meta as any)}
     />
   )
 }

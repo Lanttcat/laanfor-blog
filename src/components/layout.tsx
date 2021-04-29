@@ -10,6 +10,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Index from "./header/index"
 import "./layout.css"
+import "@fontsource/merriweather"
 
 interface IProp {
   children: React.ReactNode
@@ -36,7 +37,7 @@ const Layout: React.FC<IProp> = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main>{children}</main>
+        <main style={{ minHeight: `60vh` }}>{children}</main>
         <footer
           style={{
             marginTop: `2rem`,

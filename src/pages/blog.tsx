@@ -25,16 +25,14 @@ interface IProps {
 }
 
 const Blog: React.FC<IProps> = ({ data }) => {
-  console.log(data)
   const allBlog = data.allMdx.edges.map((x: INode) => x.node.frontmatter)
-  console.log(data)
   return (
     <Layout>
       <Seo title="Blog" />
       <div>
         <ul>
-          {allBlog.map(data => (
-            <li>
+          {allBlog.map((data, index) => (
+            <li key={index}>
               <Link to={data.path}>{data.title}</Link>
               <div>{data.date}</div>
             </li>

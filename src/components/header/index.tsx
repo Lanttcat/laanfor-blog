@@ -11,8 +11,18 @@ const Index: React.FC<IProps> = ({ siteTitle }) => (
   <header className={styles.header}>
     <div className={styles.wp}>
       <div className={styles.nav}>
-        <Link to="/" className={styles.link}>Home</Link> <br />
-        <Link to="/blog/" className={styles.link}>Blogs</Link> <br />
+        <Link to="/" className={styles.link}>
+          Home
+        </Link>
+        <Link to="/blog" className={styles.link}>
+          Blogs
+        </Link>
+        <Link to="/about" className={styles.link}>
+          About Me
+        </Link>
+      </div>
+      <div>
+        <a href="https://twitter.com/name2less"> Twitter </a>
       </div>
     </div>
   </header>
