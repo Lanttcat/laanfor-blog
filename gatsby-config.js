@@ -23,7 +23,7 @@ module.exports = {
       options: {
         extensions: [`.md`, `.mdx`],
         defaultLayouts: {
-          default: require.resolve(`./src/components/layout.tsx`),
+          default: require.resolve(`./src/components/blog-layout/index.tsx`),
         },
       },
     },

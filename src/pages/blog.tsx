@@ -2,12 +2,12 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { graphql, Link } from "gatsby"
-import { clearDirtyQueriesListToEmitViaWebsocket } from "gatsby/dist/redux/actions/internal"
 
-type blog = {
+export type blog = {
   title: string
   path: string
   date: string
+  tags: string[]
 }
 
 interface INode {

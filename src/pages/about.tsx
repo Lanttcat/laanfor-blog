@@ -6,7 +6,7 @@ import Seo from "../components/seo"
 const About = () => (
   <Layout>
     <Seo title="About me" />
-    <div>About me</div>
+    <div>我是laanfor。</div>
   </Layout>
 )
 

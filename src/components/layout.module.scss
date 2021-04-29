@@ -1,0 +1,20 @@
+.layout {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 2rem 1.0875rem;
+
+  .main {
+    min-height: 60vh;
+  }
+}
+
+.tags {
+  padding: 0;
+
+  .tag {
+    margin-right: 10px;
+    color: rebeccapurple;
+    font-size: 0.9rem;
+
+  }
+}
