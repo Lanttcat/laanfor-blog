@@ -1,3 +1,24 @@
+@import "../../styles/variables";
+
 .header {
   background: white;
+
+  .wp {
+    margin: 0 auto;
+    max-width: 960px;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav {
+    display: flex;
+    padding: 1rem 1.0875rem;
+    width: 100px;
+
+    .link {
+      color: $black;
+      text-decoration: none;
+      margin-right: 1.45rem;
+    }
+  }
 }

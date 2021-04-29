@@ -9,25 +9,11 @@ interface IProps {
 
 const Index: React.FC<IProps> = ({ siteTitle }) => (
   <header className={styles.header}>
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <Link to="/blog/">Blogs</Link> <br />
-      {/*<h1 style={{ margin: 0 }}>*/}
-      {/*  <Link*/}
-      {/*    to="/"*/}
-      {/*    style={{*/}
-      {/*      color: `white`,*/}
-      {/*      textDecoration: `none`,*/}
-      {/*    }}*/}
-      {/*  >*/}
-      {/*    {siteTitle}*/}
-      {/*  </Link>*/}
-      {/*</h1>*/}
+    <div className={styles.wp}>
+      <div className={styles.nav}>
+        <Link to="/" className={styles.link}>Home</Link> <br />
+        <Link to="/blog/" className={styles.link}>Blogs</Link> <br />
+      </div>
     </div>
   </header>
 )

@@ -44,7 +44,7 @@ const Layout: React.FC<IProp> = ({ children }) => {
         >
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          <a href="https://www.gatsbyjs.com">Gatsby</a> by Laanfor.
         </footer>
       </div>
     </>
